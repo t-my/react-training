@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import Header from './components/header';
+
+const App = function() {
+  return (
+    <div>
+      <Header/>
+      SC5 IoT Hub Test application
+    </div>
+  );
+};
+
+ReactDOM.render(<App/>, document.querySelector('#root'));
